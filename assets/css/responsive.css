@@ -1,952 +1,735 @@
-/*==================================
-TABLETS
-==================================*/
+/* =========================================================
+   TRAFFORD LOGISTICS
+   GLOBAL MOBILE RESPONSIVE SYSTEM
+   ========================================================= */
 
-@media (max-width:1024px){
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-    .hero{
+*,
+*::before,
+*::after {
+    max-width: 100%;
+}
 
-        min-height:90vh;
+img,
+video {
+    max-width: 100%;
+}
 
+
+/* =========================================================
+   GLOBAL CONTAINERS
+   ========================================================= */
+
+.container,
+.section-container,
+.hero-content,
+.fleet-capability-grid,
+.fleet-process,
+.fleet-final-cta-inner,
+.contact-final-inner {
+    width: min(100% - 40px, 1380px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .navbar {
+        position: fixed;
+
+        top: 10px;
+        left: 50%;
+
+        width: calc(100% - 24px);
+        min-height: 62px;
+
+        padding: 8px 10px 8px 12px;
+
+        gap: 10px;
+
+        border-radius: 15px;
+
+        transform: translateX(-50%);
+
+        overflow: visible;
+    }
+
+    .logo {
+        min-width: 0;
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+
+        flex: 0 0 38px;
+    }
+
+    .logo-text {
+        min-width: 0;
+    }
+
+    .logo-text span {
+        font-size: 16px;
+
+        white-space: nowrap;
+    }
+
+    .logo-text small {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: calc(100% + 9px);
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 8px 0;
+
+        border-radius: 15px;
+
+        background:
+            rgba(5, 10, 18, .97);
+
+        border:
+            1px solid rgba(255,255,255,.10);
+
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+
+        box-shadow:
+            0 20px 50px rgba(0,0,0,.45);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+
+        padding: 13px 18px;
+
+        text-align: left;
+
+        font-size: 13px;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .quote-btn {
+        min-height: 38px;
+
+        padding: 0 11px;
+
+        border-radius: 9px;
+
+        font-size: 9px;
     }
 
 }
 
-/*==================================
-PHONES
-==================================*/
 
-@media (max-width:768px){
+/* =========================================================
+   GLOBAL HERO
+   ========================================================= */
 
-    .hero{
+@media (max-width: 760px) {
 
-        min-height:100vh;
+    .hero,
+    .services-hero,
+    .fleet-hero,
+    .contact-hero {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
 
+        min-height: 0;
     }
 
-    .hero-video{
+    .hero-content {
+        width: calc(100% - 40px);
 
-        object-position:center center;
+        grid-template-columns: 1fr;
 
+        gap: 0;
+
+        min-height: auto;
+
+        padding-top: 120px;
+        padding-bottom: 70px;
     }
 
-}
-
-/*==================================
-SMALL PHONES
-==================================*/
-
-@media (max-width:480px){
-
-    .hero-video{
-
-        object-position:center center;
-
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        max-width: 100%;
     }
 
-}
-@media(max-width:992px){
-
-    .navbar{
-
-        padding:0 20px;
-
+    .hero-left {
+        margin: 0;
     }
 
-    .nav-links{
+    .hero-right {
+        margin-top: 45px;
 
-        display:none;
-
+        justify-content: center;
     }
 
-}
+    .hero-title,
+    .services-hero-content h1,
+    .fleet-hero-content h1,
+    .contact-hero h1 {
+        max-width: 100%;
 
-@media(max-width:768px){
+        font-size: clamp(38px, 11vw, 56px);
 
-    .navbar{
+        line-height: 1.02;
 
-        height:70px;
+        letter-spacing: -1.8px;
 
+        overflow-wrap: break-word;
     }
 
-    .quote-btn{
+    .hero-description,
+    .services-hero-content p,
+    .fleet-hero-content p,
+    .contact-hero-content p {
+        max-width: 100%;
 
-        padding:12px 18px;
+        font-size: 12px;
 
-        font-size:.9rem;
-
+        line-height: 1.75;
     }
 
-    .logo{
+    .hero-buttons,
+    .services-hero-buttons {
+        width: 100%;
 
-        font-size:1.1rem;
+        flex-direction: column;
 
+        gap: 10px;
     }
 
-}
-/*====================================================
-MOBILE FIRST HERO
-====================================================*/
-
-@media (max-width:768px){
-
-    /* Hero */
-
-    .hero{
-
-        min-height:100vh;
-        padding:120px 20px 60px;
-
-    }
-
-    /* Stack content */
-
-    .hero-content{
-
-        display:flex;
-        flex-direction:column;
-        gap:35px;
-        min-height:auto;
-        width:100%;
-
-    }
-
-    /* Left Content */
-
-    .hero-left{
-
-        width:100%;
-        text-align:center;
-        max-width:100%;
-
-    }
-
-    .hero-tag{
-
-        font-size:11px;
-        padding:8px 18px;
-
-    }
-
-    .hero-title{
-
-        font-size:42px;
-        line-height:1.15;
-        margin:20px 0;
-
-    }
-
-    .hero-description{
-
-        font-size:16px;
-        line-height:1.7;
-        margin:20px auto 30px;
-        max-width:340px;
-
-    }
-
-    /* Buttons */
-
-    .hero-buttons{
-
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-        width:100%;
-        align-items:center;
-
-    }
-
-    .btn-primary,
-    .btn-secondary{
-
-        width:100%;
-        max-width:320px;
-        text-align:center;
-
-    }
-
-    /* Browser */
-
-    .hero-right{
-
-        width:100%;
-        display:flex;
-        justify-content:center;
-
-    }
-
-    .browser-container{
-
-        width:100%;
-        max-width:370px;
-
-        border-radius:22px;
-
-    }
-
-    .browser-header{
-
-        height:58px;
-
-    }
-
-    .browser-address{
-
-        width:190px;
-        font-size:12px;
-
-    }
-
-    .browser-body{
-
-        height:300px;
-
-    }
-
-}/*=================================================
-LARGE DESKTOP
-=================================================*/
-
-@media (min-width:1600px){
-
-.hero-content{
-
-    max-width:1450px;
-
-}
-
-.browser-container{
-
-    width:700px;
-
-}
-
-.hero-title{
-
-    font-size:72px;
-
-}
-
-}
-
-
-/*=================================================
-LAPTOP
-=================================================*/
-
-@media (max-width:1400px){
-
-.hero-content{
-
-    width:min(94%,1200px);
-
-    gap:50px;
-
-}
-
-.browser-container{
-
-    width:560px;
-
-}
-
-.hero-title{
-
-    font-size:58px;
-
-}
-
-}
-
-
-/*=================================================
-TABLET
-=================================================*/
-
-@media (max-width:1024px){
-
-.hero-content{
-
-    gap:40px;
-
-}
-
-.browser-container{
-
-    width:480px;
-
-}
-
-.hero-title{
-
-    font-size:48px;
-
-}
-
-}
-
-
-/*=================================================
-TABLET PORTRAIT
-=================================================*/
-
-@media (max-width:900px){
-
-.hero-content{
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    text-align:center;
-
-}
-
-.hero-left{
-
-    max-width:700px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.hero-right{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.browser-container{
-
-    width:520px;
-
-}
-
-}
-
-
-/*=================================================
-MOBILE
-=================================================*/
-
-@media (max-width:768px){
-
-.hero{
-
-    padding:120px 20px 70px;
-
-}
-
-.hero-title{
-
-    font-size:40px;
-
-}
-
-.hero-description{
-
-    font-size:17px;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-.btn-primary,
-
-.btn-secondary{
-
-    width:100%;
-
-    max-width:320px;
-
-}
-
-.browser-container{
-
-    width:100%;
-
-    max-width:370px;
-
-}
-
-.browser-body{
-
-    height:290px;
-
-}
-
-}
-
-
-/*=================================================
-SMALL MOBILE
-=================================================*/
-
-@media (max-width:480px){
-
-.hero-title{
-
-    font-size:34px;
-
-}
-
-.hero-description{
-
-    font-size:15px;
-
-}
-
-.browser-container{
-
-    max-width:330px;
-
-}
-
-.browser-body{
-
-    height:260px;
-
-}
-
-}
-/*==================================
-WHY SECTION
-==================================*/
-
-@media(max-width:992px){
-
-.why-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.why-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.why-card{
-
-    padding:35px 25px;
-
-}
-
-}
-@media(max-width:768px){
-
-.cta-section{
-
-    padding:90px 20px;
-
-}
-
-.cta-container h2{
-
-    font-size:38px;
-
-}
-
-.cta-container p{
-
-    font-size:16px;
-
-}
-
-.cta-bg-text{
-
-    font-size:100px;
-
-}
-
-.cta-buttons{
-
-    flex-direction:column;
-
-}
-
-.cta-btn,
-.cta-outline-btn{
-
-    width:100%;
-
-}
-
-}
-@media(max-width:900px){
-
-.footer-container{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-}
-
-}
-/*=========================================
-HERO RESPONSIVE
-=========================================*/
-
-@media (max-width:1200px){
-
-.hero-container{
-
-    grid-template-columns:1fr;
-
-    gap:60px;
-
-}
-
-.hero-content{
-
-    text-align:center;
-
-}
-
-.hero-description{
-
-    margin:auto auto 40px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.hero-features{
-
-    justify-content:center;
-
-}
-
-.hero-browser{
-
-    width:100%;
-
-}
-
-.browser-container{
-
-    max-width:900px;
-
-}
-
-}
-/*=========================================
-HERO RESPONSIVE
-=========================================*/
-
-@media (max-width:1200px){
-
-.hero-container{
-
-    grid-template-columns:1fr;
-
-    gap:60px;
-
-}
-
-.hero-content{
-
-    text-align:center;
-
-}
-
-.hero-description{
-
-    margin:auto auto 40px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-.hero-features{
-
-    justify-content:center;
-
-}
-
-.hero-browser{
-
-    width:100%;
-
-}
-
-.browser-container{
-
-    max-width:900px;
-
-}
-
-}
-@media (max-width:992px){
-
-.hero{
-
-    min-height:auto;
-
-    padding:130px 0 80px;
-
-}
-
-.hero-title{
-
-    font-size:58px;
-
-}
-
-.browser-slide{
-
-    grid-template-columns:1fr;
-
-}
-
-.slide-left{
-
-    text-align:center;
-
-}
-
-.slide-buttons{
-
-    justify-content:center;
-
-}
-
-.browser-dashboard{
-
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-}
-@media (max-width:768px){
-
-.hero{
-
-    padding:110px 0 70px;
-
-}
-
-.hero-title{
-
-    font-size:42px;
-
-}
-
-.hero-description{
-
-    font-size:16px;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-}
-
-.btn-primary,
-.btn-secondary,
-.btn-glass{
-
-    width:100%;
-
-}
-
-.hero-features{
-
-    gap:15px;
-
-    justify-content:flex-start;
-
-}
-
-.hero-features div{
-
-    width:100%;
-
-}
-
-.hero-stats{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.browser-content{
-
-    padding:22px;
-
-}
-
-.browser-dashboard{
-
-    grid-template-columns:1fr;
-
-}
-
-.slide-left h2{
-
-    font-size:30px;
-
-}
-
-.browser-address{
-
-    display:none;
-
-}
-
-}
-@media(max-width:768px){
-
-.mission-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.mission-card{
-
-    padding:35px;
-
-}
-
-.section-heading h2{
-
-    font-size:40px;
-
-}
-
-}
-@media(max-width:992px){
-
-    .values-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
+    .hero-buttons a,
+    .services-hero-buttons a {
+        width: 100%;
     }
 
 }
 
-@media(max-width:768px){
 
-    .core-values{
+/* =========================================================
+   HERO VIDEO
+   ========================================================= */
 
-        padding:20px 0 80px;
+@media (max-width: 760px) {
 
-    }
+    .hero-video,
+    .services-hero-video,
+    .fleet-hero-video {
+        width: 100%;
+        height: 100%;
 
-    .values-grid{
+        min-width: 0;
+        max-width: none;
 
-        grid-template-columns:1fr;
+        object-fit: cover;
 
-    }
-
-    .value-card{
-
-        min-height:auto;
-
-    }
-
-}
-@media(max-width:992px){
-
-    .journey-container{
-
-        grid-template-columns:1fr;
-
-        gap:45px;
-
-    }
-
-    .journey-image img{
-
-        height:500px;
-
+        object-position: center center;
     }
 
 }
 
-@media(max-width:768px){
 
-    .our-journey{
+/* =========================================================
+   GRID SYSTEM
+   ========================================================= */
 
-        padding:20px 0 80px;
+@media (max-width: 760px) {
 
-    }
+    .services-grid,
+    .fleet-capability-grid,
+    .fleet-process,
+    .form-row,
+    .form-row.three,
+    .quote-section {
+        grid-template-columns: 1fr !important;
 
-    .journey-image img{
+        width: 100%;
 
-        height:400px;
-
-    }
-
-    .journey-content h2{
-
-        font-size:40px;
-
-    }
-
-}
-
-@media(max-width:480px){
-
-    .journey-image img{
-
-        height:320px;
-
-    }
-
-    .journey-image-label{
-
-        left:15px;
-
-        right:15px;
-
-        bottom:15px;
-
-    }
-
-}
-@media(max-width:992px){
-
-    .about-stats-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
+        max-width: 100%;
     }
 
 }
 
-@media(max-width:768px){
 
-    .about-why{
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
 
-        padding:20px 0 80px;
+@media (max-width: 760px) {
 
+    .service-card,
+    .fleet-capability-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 22px;
+
+        border-radius: 17px;
     }
 
-    .about-stats-grid{
+    .service-card h3,
+    .fleet-capability-card h3 {
+        font-size: 20px;
 
-        grid-template-columns:1fr;
-
+        overflow-wrap: break-word;
     }
 
-    .about-stat-card{
+    .service-card p,
+    .fleet-capability-card p {
+        max-width: 100%;
 
-        min-height:auto;
+        font-size: 11px;
 
-    }
-
-    .about-stat-card strong{
-
-        font-size:42px;
-
-    }
-
-}
-@media(max-width:768px){
-
-    .about-cta{
-
-        padding:20px 0 80px;
-
-    }
-
-    .about-cta-content{
-
-        padding:55px 25px;
-
-        border-radius:24px;
-
-    }
-
-    .about-cta h2{
-
-        font-size:40px;
-
-    }
-
-}
-@media(max-width:900px){
-
-    .footer-container{
-
-        grid-template-columns:1fr 1fr;
-
-        gap:45px;
-
+        line-height: 1.75;
     }
 
 }
 
-@media(max-width:600px){
 
-    .site-footer{
+/* =========================================================
+   SERVICES PAGE
+   ========================================================= */
 
-        padding:60px 0 25px;
+@media (max-width: 760px) {
 
+    .services-hero-content {
+        width: calc(100% - 40px);
+
+        padding-top: 125px;
+        padding-bottom: 75px;
     }
 
-    .footer-container{
+    .services-trust {
+        width: 100%;
 
-        grid-template-columns:1fr;
+        display: flex;
 
-        gap:35px;
+        flex-direction: column;
 
+        gap: 9px;
     }
 
-    .footer-brand{
+    .trust-card {
+        width: 100%;
 
-        max-width:100%;
+        padding: 12px;
 
+        min-width: 0;
     }
 
-    .footer-bottom{
+    .services-heading {
+        width: 100%;
 
-        margin-top:50px;
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .footer-bottom-links{
+    .services-heading h2 {
+        font-size: 38px;
 
-        flex-wrap:wrap;
+        line-height: 1.04;
+    }
 
+}
+
+
+/* =========================================================
+   FLEET PAGE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .fleet-overview,
+    .fleet-operations {
+        width: 100%;
+
+        padding:
+            70px 20px
+            75px;
+    }
+
+    .fleet-overview-header,
+    .fleet-operations-header {
+        width: 100%;
+
+        margin-bottom: 38px;
+    }
+
+    .fleet-overview-header h2,
+    .fleet-operations-header h2 {
+        font-size: 38px;
+
+        line-height: 1.04;
+    }
+
+    .fleet-process-step {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .fleet-final-cta {
+        padding:
+            0 20px
+            60px;
+    }
+
+    .fleet-final-cta-inner {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 27px 22px;
+    }
+
+    .fleet-final-cta-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .fleet-final-primary,
+    .fleet-final-secondary {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .quote-section {
+        width: calc(100% - 40px);
+
+        display: grid;
+
+        gap: 35px;
+
+        padding:
+            65px 0
+            70px;
+    }
+
+    .quote-intro {
+        position: static;
+
+        width: 100%;
+    }
+
+    .quote-intro h2 {
+        font-size: 38px;
+
+        line-height: 1.04;
+    }
+
+    .quote-form-wrapper {
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 20px 16px;
+
+        border-radius: 17px;
+    }
+
+    .form-row,
+    .form-row.three {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+    }
+
+    .form-field {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .contact-final {
+        width: 100%;
+
+        padding:
+            0 20px
+            55px;
+    }
+
+    .contact-final-inner {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 27px 22px;
+    }
+
+    .contact-whatsapp {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   CLIENT PORTAL
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .client-portal,
+    .portal-container,
+    .dashboard-container,
+    .portal-content {
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+    }
+
+    .portal-grid,
+    .dashboard-grid,
+    .stats-grid,
+    .shipment-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .portal-card,
+    .dashboard-card,
+    .shipment-card,
+    .invoice-card,
+    .document-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+}
+
+
+/* =========================================================
+   IMAGES / CARDS / TABLES
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .table-wrapper,
+    .table-responsive {
+        width: 100%;
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    img {
+        height: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   TYPOGRAPHY SAFETY
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span,
+    a {
+        overflow-wrap: break-word;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .navbar {
+        width: calc(100% - 16px);
+
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+    }
+
+    .logo-text span {
+        font-size: 14px;
+    }
+
+    .logo-text small {
+        font-size: 5px;
+        letter-spacing: 1.6px;
+    }
+
+    .quote-btn {
+        min-height: 36px;
+
+        padding: 0 9px;
+
+        font-size: 8px;
+    }
+
+}
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 9px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    cursor: pointer;
+
+    z-index: 10001;
+}
+
+.menu-toggle .bar {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    transition:
+        transform .3s ease,
+        opacity .3s ease;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    /* Hamburger → X */
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform:
+            translateY(7px)
+            rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform:
+            translateY(-7px)
+            rotate(-45deg);
     }
 
 }
