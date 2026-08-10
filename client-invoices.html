@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Trafford Logistics | Invoices</title>
+
+    <link
+        rel="stylesheet"
+        href="assets/css/client-invoices.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD HEADER
+    ========================================== -->
+
+    <header class="dashboard-header">
+
+
+        <a
+            href="client-dashboard.html"
+            class="dashboard-brand">
+
+            <img
+                src="assets/images/trafford-logo.png"
+                alt="Trafford Logistics"
+            >
+
+            <div>
+
+                <strong>
+                    Trafford
+                </strong>
+
+                <span>
+                    LOGISTICS
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div class="dashboard-header-right">
+
+            <div class="account-info">
+
+                <span>
+                    CLIENT ACCOUNT
+                </span>
+
+                <strong>
+                    Account
+                </strong>
+
+            </div>
+
+
+            <a
+                href="client-portal.html"
+                class="sign-out-btn">
+
+                Sign Out
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         DASHBOARD LAYOUT
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="dashboard-sidebar">
+
+            <div class="sidebar-label">
+                CLIENT PORTAL
+            </div>
+
+
+            <nav class="dashboard-nav">
+
+
+                <a
+                    href="client-dashboard.html"
+                    class="dashboard-nav-link">
+
+                    <span>▦</span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a
+                    href="client-shipments.html"
+                    class="dashboard-nav-link">
+
+                    <span>◉</span>
+
+                    Shipments
+
+                </a>
+
+
+                <a
+                    href="client-documents.html"
+                    class="dashboard-nav-link">
+
+                    <span>▤</span>
+
+                    Documents
+
+                </a>
+
+
+                <a
+                    href="client-invoices.html"
+                    class="dashboard-nav-link active">
+
+                    <span>£</span>
+
+                    Invoices
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="dashboard-nav-link">
+
+                    <span>?</span>
+
+                    Support
+
+                </a>
+
+
+            </nav>
+
+
+            <div class="sidebar-help">
+
+                <span>
+                    NEED ASSISTANCE?
+                </span>
+
+                <strong>
+                    Contact the Trafford Logistics team.
+                </strong>
+
+                <a
+                    href="https://wa.me/447346741504?text=Hello%20Trafford%20Logistics%2C%20I%20need%20assistance%20with%20my%20account."
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Contact Support →
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <span>
+                        CLIENT PORTAL
+                    </span>
+
+                    <h1>
+                        Invoices
+                    </h1>
+
+                    <p>
+                        Manage and access your billing documents.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="client-dashboard.html"
+                    class="back-dashboard">
+
+                    ← Dashboard
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 INVOICE CONTROLS
+            ================================== -->
+
+            <section class="invoice-controls">
+
+
+                <div class="invoice-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="search"
+                        placeholder="Search invoices..."
+                        aria-label="Search invoices"
+                    >
+
+                </div>
+
+
+                <select
+                    class="invoice-filter"
+                    aria-label="Filter invoices">
+
+                    <option>
+                       All invoices
+                    </option>
+
+                    <option>
+                        Paid
+                    </option>
+
+                    <option>
+                        Pending
+                    </option>
+
+                    <option>
+                        Overdue
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="button"
+                    class="filter-button">
+
+                    Filter
+
+                </button>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 INVOICE AREA
+            ================================== -->
+
+            <section class="invoice-panel">
+
+
+                <div class="invoice-panel-header">
+
+                    <div>
+
+                        <span>
+                            BILLING RECORDS
+                        </span>
+
+                        <h2>
+                            Your Invoices
+                        </h2>
+
+                    </div>
+
+
+                    <div class="invoice-panel-status">
+
+                        <span class="status-dot"></span>
+
+                        Account Billing
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BACKEND DATA WILL APPEAR HERE -->
+
+                <div class="invoice-empty-state">
+
+                    <div class="empty-icon">
+                        £
+                    </div>
+
+
+                    <h3>
+                        Your invoices will appear here
+                    </h3>
+
+
+                    <p>
+                        Once billing records are available
+                        for your account, you will be able
+                        to view and manage them from this area.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 INVOICE INFORMATION
+            ================================== -->
+
+            <section class="invoice-information">
+
+
+                <div class="information-card">
+
+                    <div class="information-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Secure billing records
+                        </strong>
+
+                        <p>
+                            Your billing information is managed
+                            through your Trafford Logistics account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="information-card">
+
+                    <div class="information-icon">
+                        ?
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Need help with an invoice?
+                        </strong>
+
+                        <p>
+                            Contact the Trafford Logistics team
+                            for assistance with your billing records.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

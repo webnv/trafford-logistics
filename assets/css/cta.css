@@ -1,0 +1,166 @@
+/*==================================
+CTA SECTION
+===================================*/
+
+.cta-section{
+
+    position:relative;
+
+    padding:140px 20px;
+
+    background:linear-gradient(
+    180deg,
+    #050505,
+    #0B0B0B);
+
+    overflow:hidden;
+
+}
+
+.cta-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta-tag{
+
+    display:inline-block;
+
+    color:#F7941D;
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.cta-container h2{
+
+    font-size:58px;
+
+    color:#fff;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.cta-container p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#9FA8B5;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+/* Buttons */
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-btn{
+
+    padding:18px 38px;
+
+    border-radius:60px;
+
+    background:#F7941D;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.4s;
+
+}
+
+.cta-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(247,148,29,.35);
+
+}
+
+.cta-outline-btn{
+
+    padding:18px 38px;
+
+    border-radius:60px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+.cta-outline-btn:hover{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+/* Background Text */
+
+.cta-bg-text{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:220px;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.03);
+
+    white-space:nowrap;
+
+    pointer-events:none;
+
+    user-select:none;
+
+}

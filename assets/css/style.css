@@ -1,0 +1,952 @@
+/*==================================
+TRAFFORD DESIGN SYSTEM
+==================================*/
+
+:root{
+--heading-font:"Space Grotesk",sans-serif;
+
+--body-font:"Inter",sans-serif;
+font-family:var(--heading-font);
+--radius-sm:12px;
+
+--radius-md:18px;
+
+--radius-lg:26px;
+
+--radius-xl:36px;
+border-radius:var(--radius-md);
+--shadow-sm:
+0 8px 20px rgba(0,0,0,.08);
+
+--shadow-md:
+0 20px 45px rgba(0,0,0,.12);
+
+--shadow-lg:
+0 35px 80px rgba(0,0,0,.18);
+--shadow-sm:
+0 8px 20px rgba(0,0,0,.08);
+
+--shadow-md:
+0 20px 45px rgba(0,0,0,.12);
+
+--shadow-lg:
+0 35px 80px rgba(0,0,0,.18);
+--glass-bg:rgba(255,255,255,.14);
+
+--glass-border:rgba(255,255,255,.25);
+
+--glass-blur:25px;
+    /* Primary */
+
+    --primary:#0B3A63;
+
+    --primary-light:#1D5D96;
+
+    --primary-dark:#072640;
+
+    /* Accent */
+
+    --accent:#F7941D;
+
+    --accent-hover:#FFAA3C;
+
+    /* Backgrounds */
+
+    --bg:#F3F8FC;
+
+    --bg-light:#FAFCFE;
+
+    --glass:rgba(255,255,255,.16);
+
+    /* Text */
+
+    --text:#14273D;
+
+    --text-light:#6B7C93;
+
+    --white:#FFFFFF;
+
+    /* Borders */
+
+    --border:rgba(255,255,255,.22);
+
+}
+/*==================================
+PRIMARY BUTTON
+==================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:56px;
+
+    padding:0 34px;
+
+    background:var(--accent);
+
+    color:var(--white);
+
+    border:none;
+
+    border-radius:var(--radius-md);
+
+    font-family:var(--body-font);
+
+    font-size:16px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--accent-hover);
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+/*==================================
+SECONDARY BUTTON
+==================================*/
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:56px;
+
+    padding:0 34px;
+
+    background:rgba(255,255,255,.10);
+
+    color:var(--white);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:var(--radius-md);
+
+    backdrop-filter:blur(12px);
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:all .35s ease;
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.20);
+
+    transform:translateY(-4px);
+
+}
+/*==================================
+GLASS CARD
+==================================*/
+
+.glass-card{
+
+    background:var(--glass-bg);
+
+    border:1px solid var(--glass-border);
+
+    backdrop-filter:blur(var(--glass-blur));
+
+    -webkit-backdrop-filter:blur(var(--glass-blur));
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-md);
+
+}
+/*==================================
+SECTION TITLE
+==================================*/
+
+.section-title{
+
+    font-family:var(--heading-font);
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.section-text{
+
+    font-size:18px;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    max-width:700px;
+
+}
+/*==================================
+HEADER
+==================================*/
+
+.header{
+
+    position:absolute;
+
+    top:24px;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+}
+
+/*==================================
+NAVIGATION
+==================================*/
+
+.navbar{
+
+    width:min(92%,1300px);
+
+    margin:auto;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 32px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.25);
+box-shadow:
+0 25px 60px rgba(0,0,0,.18),
+0 50px 120px rgba(0,0,0,.12);
+
+.logo{
+
+    text-decoration:none;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    letter-spacing:.5px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:36px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ff9d1e;
+
+}
+
+.quote-btn{
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    background:#ff9d1e;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.quote-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(255,157,30,.35);
+
+}
+/*==================================
+HERO SECTION
+==================================*/
+
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/*==================================
+VIDEO BACKGROUND
+==================================*/
+
+.hero-background{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-video{
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,25,45,.42) 0%,
+            rgba(8,25,45,.18) 45%,
+            rgba(8,25,45,.08) 100%
+        );
+}
+/*==================================
+VIDEO ANIMATION
+==================================*/
+
+@keyframes heroZoom{
+
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+
+}
+/*==================================
+ HERO RIGHT
+==================================*/
+.hero-right{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    margin-top:-80px;
+
+}
+
+/*==================================
+ FLOATING BROWSER
+==================================*/
+/*==================================
+BROWSER
+==================================*/
+
+.browser-container{
+
+   .browser-container{
+    animation:floatBrowser 6s ease-in-out infinite;
+
+transform-origin:center;
+
+transition:.4s;
+    width:min(520px,100%);
+}
+
+    max-width:100%;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.22);
+
+    backdrop-filter:blur(40px);
+
+    -webkit-backdrop-filter:blur(40px);
+
+    border:1px solid rgba(255,255,255,.28);
+
+    box-shadow:
+
+        0 50px 120px rgba(0,0,0,.28);
+
+}
+
+/*==================================
+HEADER
+==================================*/
+
+.browser-header{
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 22px;
+
+    background:rgba(255,255,255,.08);
+
+}
+.browser-controls{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.browser-dot{
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+}
+
+.red{
+
+    background:#ff5f57;
+
+}
+
+.yellow{
+
+    background:#febc2e;
+
+}
+
+.green{
+
+    background:#28c840;
+
+}
+.browser-address{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:340px;
+
+    height:42px;
+
+    padding:0 18px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+/*==================================
+BROWSER BODY
+==================================*/
+
+.browser-body{
+
+    height:380px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:
+
+        radial-gradient(circle at top right,
+        rgba(13,110,253,.08),
+        transparent 40%),
+
+        radial-gradient(circle at bottom left,
+        rgba(255,157,30,.10),
+        transparent 45%),
+
+        linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #eef5fc 100%);
+
+}
+
+/*==================================
+HERO CONTENT
+==================================*/
+
+.hero-content{
+
+    position:relative;
+
+    z-index:20;
+
+    width:min(92%,1300px);
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+/* LEFT */
+
+.hero-left{
+
+    max-width:620px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+.hero-title{
+
+    font-size:68px;
+
+    line-height:1.05;
+
+    color:#ffffff;
+
+    font-weight:800;
+
+    margin-bottom:28px;
+
+}
+
+.hero-title span{
+
+    color:#ff9d1e;
+
+}
+
+.hero-description{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.88);
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:50px;
+
+}
+.browser-home{
+
+    padding:45px;
+
+}
+
+.browser-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#eef6ff;
+
+    color:#0d5eff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.browser-home h2{
+
+    font-size:38px;
+
+    margin:25px 0 15px;
+
+    color:#132238;
+
+}
+
+.browser-home p{
+
+    font-size:17px;
+
+    color:#667085;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+.browser-btn{
+
+    display:inline-block;
+
+    padding:15px 28px;
+
+    border-radius:12px;
+
+    background:#ff9d1e;
+
+    color:#fff;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+.browser-services{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.browser-service{
+
+    background:#f8fbff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.browser-service:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.08);
+
+}
+
+.service-circle{
+
+    width:65px;
+
+    height:65px;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border-radius:50%;
+
+    background:#0d5eff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.browser-service span{
+
+    font-weight:700;
+
+    color:#23354d;
+
+}
+/*==================================
+MINI HERO
+==================================*/
+.browser-page{
+
+    padding:25px 30px;
+
+}
+
+.mini-hero{
+
+    text-align:center;
+
+}
+
+.mini-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    background:#e8f2ff;
+
+    color:#0d5eff;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+.mini-hero h2{
+
+    font-size:30px;
+
+    margin:18px 0 12px;
+
+    line-height:1.15;
+
+    color:#16253d;
+
+}
+
+.mini-hero span{
+
+    color:#ff9d1e;
+
+}
+
+.mini-hero p{
+
+    max-width:420px;
+
+    margin:0 auto;
+
+    color:#68778f;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+.mini-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:12px 26px;
+
+    border-radius:14px;
+
+    background:#ff9d1e;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.mini-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+@keyframes floatBrowser{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+}}
+/*==================================
+ACTIVE NAVIGATION
+===================================*/
+
+.nav-links a{
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.nav-links a.active{
+
+    color:#F7941D;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#F7941D;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+.nav-links a:hover{
+
+    color:#F7941D;
+
+}
